@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style_index.css">
-  <script src="script_index.js"></script>
-  <title>LazyTimer</title>
-</head>
-<body>
-  <header>
-    <h1>LAZYTIMER | VOCÊ TEM X SALADAS DE FRUTA</h1>
-  </header>
-  <section>
-    <div>
-      <div>
-        <label for="taskName">Criar nova tarefa +</label>
-        <input type="text" id="taskName">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style_index.css" />
+    <script src="script_index.js"></script>
+    <title>LazyTimer</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="title-container">
+          <h1 class="title">LAZYTIMER | VOCÊ TEM X SALADAS DE FRUTA</h1>
+        </div>
       </div>
-      <div>
-        <label for="taskDescription">Descrição:</label>
-        <input type="text" id="taskDescription">
+      <div class="content">
+        <div class="column">
+          <div class="rectangle-up">
+            <button class="task">Criar nova tarefa +</button>
+          </div>
+          <div class="rectangle-down">
+            00:00:00
+            <button class="start">START</button>
+          </div>
+        </div>
+        <div class="column">
+          <img src="james.png" alt="imagem do james" />
+        </div>
       </div>
-      <div>
-        <label for="taskWeight">Peso:</label>
-        <input type="text" id="taskWeight">
-      </div>
-      <div>
-        <label for="taskTime">Tempo:</label>
-        <input type="text" id="taskTime">
-      </div>
-      <button onclick="addTask()">Adicionar Tarefa</button>
-      <ul id="taskList"></ul>
     </div>
-    <div>
-      <div>00:00</div>
-      <button>START</button>
-    </div>
-    <aside>
-      <img src="" alt="Imagem do James">
-    </aside>
-  </section>
-  <div></div>
-</body>
+  </body>
+
+  <body>
+    <header>
+      <h1>LAZYTIMER | VOCÊ TEM X SALADAS DE FRUTA</h1>
+    </header>
+    <section>
+      <div>
+        <div>
+          <label for="taskName">Criar nova tarefa +</label>
+          <input type="text" id="taskName" />
+        </div>
+        <div>
+          <label for="taskDescription">Descrição:</label>
+          <input type="text" id="taskDescription" />
+        </div>
+        <div>
+          <label for="taskWeight">Peso:</label>
+          <input type="text" id="taskWeight" />
+        </div>
+        <div>
+          <label for="taskTime">Tempo:</label>
+          <input type="text" id="taskTime" />
+        </div>
+        <button onclick="addTask()">Adicionar Tarefa</button>
+        <ul id="taskList"></ul>
+      </div>
+      <div>
+        <div>00:00</div>
+        <button>START</button>
+      </div>
+      <aside>
+        <img src="" alt="Imagem do James" />
+      </aside>
+    </section>
+    <div></div>
+  </body>
 </html>
