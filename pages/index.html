@@ -1,70 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style_index.css" />
-    <script src="script_index.js"></script>
-    <title>LazyTimer</title>
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="header">
-        <div class="title-container">
-          <h1 class="title">LAZYTIMER | VOCÊ TEM X SALADAS DE FRUTA</h1>
-        </div>
-      </div>
-      <div class="content">
-        <div class="column">
-          <div class="rectangle-up">
-            <button class="task">Criar nova tarefa +</button>
-          </div>
-          <div class="rectangle-down">
-            00:00:00
-            <button class="start">START</button>
-          </div>
-        </div>
-        <div class="column">
-          <img src="james.png" alt="imagem do james" />
-        </div>
-      </div>
-    </div>
-  </body>
-
-  <body>
-    <header>
-      <h1>LAZYTIMER | VOCÊ TEM X SALADAS DE FRUTA</h1>
-    </header>
-    <section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style_index.css">
+  <script src="script_index.js"></script>
+  <title>LazyTimer</title>
+</head>
+<body>
+  <header>
+    <h1>LAZYTIMER | VOCÊ TEM X SALADAS DE FRUTA</h1>
+  </header>
+  <section>
+    <div>
       <div>
-        <div>
-          <label for="taskName">Criar nova tarefa +</label>
-          <input type="text" id="taskName" />
-        </div>
-        <div>
-          <label for="taskDescription">Descrição:</label>
-          <input type="text" id="taskDescription" />
-        </div>
-        <div>
-          <label for="taskWeight">Peso:</label>
-          <input type="text" id="taskWeight" />
-        </div>
-        <div>
-          <label for="taskTime">Tempo:</label>
-          <input type="text" id="taskTime" />
-        </div>
-        <button onclick="addTask()">Adicionar Tarefa</button>
-        <ul id="taskList"></ul>
+        <label for="taskName">Criar nova tarefa +</label>
+        <input type="text" id="taskName">
       </div>
       <div>
-        <div>00:00</div>
-        <button>START</button>
+        <label for="taskDescription">Descrição:</label>
+        <input type="text" id="taskDescription">
       </div>
-      <aside>
-        <img src="" alt="Imagem do James" />
-      </aside>
-    </section>
-    <div></div>
-  </body>
+      <div>
+        <label for="taskWeight">Peso:</label>
+        <input type="text" id="taskWeight">
+      </div>
+      <div>
+        <label for="taskTime">Tempo:</label>
+        <input type="text" id="taskTime">
+      </div>
+      <button onclick="addTask()">Adicionar Tarefa</button>
+      <ul id="taskList"></ul>
+  </section>
+
+  
+  <h2>Cronômetro</h2>
+  <div class="timer">00:00:00</div>
+  <div class="btn-container">
+    <label for="minutes-input">Minutos:</label>
+    <input type="number" step="0.01" id="minutes-input" min="0" value="1">
+    <button id="start-btn" class="btn">Iniciar</button>
+    <button id="reset-btn" class="btn">Resetar</button>
+  </div>
+  <audio id="audio" src="audio/notification.mp3" preload="auto"></audio>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript"></script>
+
+</body>
 </html>

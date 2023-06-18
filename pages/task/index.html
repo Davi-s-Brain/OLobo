@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style_index.css" />
+    <title>LazyTimer</title>
+  </head>
+  <body>
+    <section>
+      <div class="content">
+        <div>
+          <label for="taskName">Criar nova tarefa +</label>
+          <input type="text" id="taskName" />
+        </div>
+        <div>
+          <label for="taskDescription">Descrição:</label>
+          <input type="text" id="taskDescription" />
+        </div>
+        <div>
+          <label for="taskWeight">Peso:</label>
+          <input type="text" id="taskWeight" />
+        </div>
+        <div>
+          <label for="taskTime">Tempo:</label>
+          <input type="text" id="taskTime" />
+        </div>
+        <a href="../index.html">
+          <button onclick="addTask()">Adicionar Tarefa</button>
+        </a>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </body>
+</html>
