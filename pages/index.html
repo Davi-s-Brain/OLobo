@@ -13,8 +13,23 @@
   </header>
   <section>
     <div>
-      <input type="text" id="taskInput">
-      <button onclick="addTask()">Criar uma tarefa +</button>
+      <div>
+        <label for="taskName">Criar nova tarefa +</label>
+        <input type="text" id="taskName">
+      </div>
+      <div>
+        <label for="taskDescription">Descrição:</label>
+        <input type="text" id="taskDescription">
+      </div>
+      <div>
+        <label for="taskWeight">Peso:</label>
+        <input type="text" id="taskWeight">
+      </div>
+      <div>
+        <label for="taskTime">Tempo:</label>
+        <input type="text" id="taskTime">
+      </div>
+      <button onclick="addTask()">Adicionar Tarefa</button>
       <ul id="taskList"></ul>
     </div>
     <div>
