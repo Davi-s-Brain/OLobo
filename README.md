@@ -1,2 +1,2 @@
 # OLobo
-Vai comer seu C#
+ Projeto para o Hackathon hackfools.
